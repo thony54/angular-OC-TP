@@ -1,0 +1,19 @@
+    <li class="list-group-item" [ngStyle]="{background: getColor()}">
+    
+    <div class="row">
+
+        <!--bootstrap pour mettre la date en haut à droite et pipe le postDate avec un date short pour rendre la date lisible-->
+        <p class="col-10"></p>
+        <p class="col-2">{{postDate | date:"short" }}</p>
+
+        <h1>{{postTitle}}</h1>
+
+        <p>{{postContent}}</p>
+
+    </div>
+
+    <button (click)="onLike()">Like</button>
+
+    <button (click)="onDislike()">Dislike</button>
+
+</li>
